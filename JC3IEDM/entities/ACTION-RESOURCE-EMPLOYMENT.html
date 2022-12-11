@@ -1,0 +1,162 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">ACTION-RESOURCE-EMPLOYMENT</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">The procedure for using a specific ACTION-RESOURCE with or without dependence upon a specific ACTION-OBJECTIVE.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Subtypes:</td>
+                     <td class="c"><a href="./ACTION-AIRCRAFT-EMPLOYMENT.html">ACTION-AIRCRAFT-EMPLOYMENT</a>, <a href="./ACTION-ELECTRONIC-WARFARE-EMPLOYMENT.html">ACTION-ELECTRONIC-WARFARE-EMPLOYMENT</a>, <a href="./ACTION-MARITIME-EMPLOYMENT.html">ACTION-MARITIME-EMPLOYMENT</a>, <a href="./ACTION-RECONNAISSANCE-EMPLOYMENT.html">ACTION-RECONNAISSANCE-EMPLOYMENT</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./ACTION-OBJECTIVE.html">ACTION-OBJECTIVE</a></td>
+                                       <td class="c">is-the-subject-of / is-relevant-for</td>
+                                       <td class="c">ACTION-RESOURCE-EMPLOYMENT</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">action-objective-index<br>action-id
+                                       </td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./ACTION-RESOURCE.html">ACTION-RESOURCE</a></td>
+                                       <td class="c">is-used-according-to / describes-use-of</td>
+                                       <td class="c">ACTION-RESOURCE-EMPLOYMENT</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id<br>action-resource-index
+                                       </td>
+                                       <td class="c">One-to-Zero-or-One (Z)</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-RESOURCE-EMPLOYMENT-action-id.html">action-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific ACTION and to distinguish it from all other ACTIONs.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-RESOURCE-EMPLOYMENT-action-id.html">action-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific ACTION and to distinguish it from all other ACTIONs.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-RESOURCE-EMPLOYMENT-action-resource-employment-index.html">action-resource-employment-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific ACTION-RESOURCE-EMPLOYMENT for a specific ACTION-RESOURCE
+                                          and to distinguish it from all other ACTION-RESOURCE-EMPLOYMENTs for that ACTION-RESOURCE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-RESOURCE-EMPLOYMENT-action-resource-index.html">action-resource-index (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific ACTION-RESOURCE for a specific ACTION and to distinguish
+                                          it from all other ACTION-RESOURCEs for that ACTION.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-RESOURCE-EMPLOYMENT-action-objective-index.html">action-objective-index (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific ACTION-OBJECTIVE for a specific ACTION and to distinguish
+                                          it from all other ACTION-OBJECTIVEs for that ACTION.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-RESOURCE-EMPLOYMENT-action-resource-employment-azimuth-fire-angle.html">action-resource-employment-azimuth-fire-angle</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The rotational measurement clockwise from the line of true North specifying the direction of fire for the ACTION-RESOURCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-RESOURCE-EMPLOYMENT-action-resource-employment-category-code.html">action-resource-employment-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the class of ACTION-RESOURCE-EMPLOYMENT. It serves as a discriminator that partitions ACTION-RESOURCE-EMPLOYMENT
+                                          into subtypes.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-RESOURCE-EMPLOYMENT-action-resource-employment-method-of-control-code.html">action-resource-employment-method-of-control-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the standard procedure to be used in controlling the employment of a specific ACTION-RESOURCE
+                                          in support of a specific ACTION.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-RESOURCE-EMPLOYMENT-action-resource-employment-trajectory-fire-code.html">action-resource-employment-trajectory-fire-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the type of trajectory to be used in firing of a specific ACTION-RESOURCE in support of
+                                          a specific ACTION.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

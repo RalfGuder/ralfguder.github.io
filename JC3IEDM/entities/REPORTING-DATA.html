@@ -1,0 +1,410 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">REPORTING-DATA</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">The specification of source, quality and timing that applies to reported data.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Subtypes:</td>
+                     <td class="c"><a href="./REPORTING-DATA-ABSOLUTE-TIMING.html">REPORTING-DATA-ABSOLUTE-TIMING</a>, <a href="./REPORTING-DATA-RELATIVE-TIMING.html">REPORTING-DATA-RELATIVE-TIMING</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./ORGANISATION.html">ORGANISATION</a></td>
+                                       <td class="c">is-the-reporting-agent-for / is-reported-by</td>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-reporting-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./REFERENCE.html">REFERENCE</a></td>
+                                       <td class="c">provides-information-related-to / is-amplified-by</td>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reference-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./ACTION-EFFECT.html">ACTION-EFFECT</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./CONTEXT-ASSESSMENT.html">CONTEXT-ASSESSMENT</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./HOLDING.html">HOLDING</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-CAPABILITY.html">OBJECT-ITEM-CAPABILITY</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-STATUS.html">OBJECT-ITEM-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-TYPE.html">OBJECT-ITEM-TYPE</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./REQUEST-ANSWER.html">REQUEST-ANSWER</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">is-part-of / </td>
+                                       <td class="c"><a href="./REQUEST-ANSWER-ELEMENT.html">REQUEST-ANSWER-ELEMENT</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">comprising-reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">identifies-the-source-for / is-referenced-to</td>
+                                       <td class="c"><a href="./CANDIDATE-TARGET-DETAIL-AUTHORISATION.html">CANDIDATE-TARGET-DETAIL-AUTHORISATION</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">identifies-the-source-for / is-referenced-to</td>
+                                       <td class="c"><a href="./CANDIDATE-TARGET-LIST.html">CANDIDATE-TARGET-LIST</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">identifies-the-source-for / is-referenced-to</td>
+                                       <td class="c"><a href="./CANDIDATE-TARGET-LIST-AUTHORISATION.html">CANDIDATE-TARGET-LIST-AUTHORISATION</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./ACTION-EVENT-STATUS.html">ACTION-EVENT-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./ACTION-TASK-STATUS.html">ACTION-TASK-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">is-the-object-of / </td>
+                                       <td class="c"><a href="./CONTEXT-REPORTING-DATA-ASSOCIATION.html">CONTEXT-REPORTING-DATA-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">is-cited-in / is-referenced-to</td>
+                                       <td class="c"><a href="./CONTEXT-ELEMENT.html">CONTEXT-ELEMENT</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./TARGET-PERSONNEL-PROTECTION.html">TARGET-PERSONNEL-PROTECTION</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./ACTION-EVENT-DETAIL.html">ACTION-EVENT-DETAIL</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-LOCATION.html">OBJECT-ITEM-LOCATION</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-ADDRESS.html">OBJECT-ITEM-ADDRESS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-ASSOCIATION-STATUS.html">OBJECT-ITEM-ASSOCIATION-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./ORGANISATION-STRUCTURE.html">ORGANISATION-STRUCTURE</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-GROUP-ACCOUNT.html">OBJECT-ITEM-GROUP-ACCOUNT</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-AFFILIATION.html">OBJECT-ITEM-AFFILIATION</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./ACTION-LOCATION.html">ACTION-LOCATION</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./NETWORK-SERVICE-STATUS.html">NETWORK-SERVICE-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./HOLDING-TRANSFER.html">HOLDING-TRANSFER</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-HOSTILITY-STATUS.html">OBJECT-ITEM-HOSTILITY-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./ACTION-COMMENT.html">ACTION-COMMENT</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REPORTING-DATA</td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-COMMENT.html">OBJECT-ITEM-COMMENT</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-id.html">reporting-data-id (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific REPORTING-DATA and to distinguish it from all other
+                                          REPORTING-DATAs.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reference-id.html">reference-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific REFERENCE and to distinguish it from all other REFERENCEs.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-accuracy-code.html">reporting-data-accuracy-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents, for intelligence purpose, the general appraisal of the subject matter in graded terms
+                                          to indicate the extent or degree to which it has been judged to be free from mistake or error or to conform to truth or some
+                                          recognised standard value.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-category-code.html">reporting-data-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents, for usual operational purposes, the nature of a specific REPORTING-DATA.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-counting-indicator-code.html">reporting-data-counting-indicator-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that denotes whether the data referred to by a specific REPORTING-DATA is based on a count of objects.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-credibility-code.html">reporting-data-credibility-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents, for normal operational use, the degree of trustworthiness of the data referenced by a
+                                          specific REPORTING-DATA.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-real-data-exercise-use-only-code.html">reporting-data-real-data-exercise-use-only-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that determines whether a specific REPORTING-DATA refers to real data in an exercise scenario.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-reliability-code.html">reporting-data-reliability-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents, for intelligence purpose, the general appraisal of the source in graded terms to indicate
+                                          the extent to which it has been proven it can be counted on or trusted in to do as expected.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-reporting-datetime.html">reporting-data-reporting-datetime</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string representing a point in time that designates when the data referenced by the REPORTING-DATA is provided.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-reporting-organisation-id.html">reporting-data-reporting-organisation-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The identifier of the ORGANISATION that is responsible for providing the data that is referenced by the specific REPORTING-DATA
+                                          (a role name for object-item-id).
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-source-type-code.html">reporting-data-source-type-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that identifies the source type from which intelligence information is obtained and which is referred to
+                                          by a specific REPORTING-DATA.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REPORTING-DATA-reporting-data-timing-category-code.html">reporting-data-timing-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the absolute, uncertain or relative timing for a specific REPORTING-DATA. It serves as
+                                          a discriminator that partitions REPORTING-DATA into subtypes.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

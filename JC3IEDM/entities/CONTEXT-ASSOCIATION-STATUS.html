@@ -1,0 +1,136 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">CONTEXT-ASSOCIATION-STATUS</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">A record of the perceived state of a specific CONTEXT-ASSOCIATION as determined by the establishing organisation.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./ORGANISATION.html">ORGANISATION</a></td>
+                                       <td class="c">establishes / is-established-by</td>
+                                       <td class="c">CONTEXT-ASSOCIATION-STATUS</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">context-association-status-establishing-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./CONTEXT-ASSOCIATION.html">CONTEXT-ASSOCIATION</a></td>
+                                       <td class="c">has / is-ascribed-to</td>
+                                       <td class="c">CONTEXT-ASSOCIATION-STATUS</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">context-association-subject-context-id<br>context-association-object-context-id
+                                       </td>
+                                       <td class="c">One-to-One-or-More (P)</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CONTEXT-ASSOCIATION-STATUS-context-association-object-context-id.html">context-association-object-context-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The context-id of a specific CONTEXT that serves as the object of a specific CONTEXT-ASSOCIATION (a role name for context-id).</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CONTEXT-ASSOCIATION-STATUS-context-association-status-index.html">context-association-status-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific CONTEXT-ASSOCIATION-STATUS for a specific CONTEXT-ASSOCIATION
+                                          and to distinguish it from all other CONTEXT-ASSOCIATION-STATUSs for that CONTEXT-ASSOCIATION.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CONTEXT-ASSOCIATION-STATUS-context-association-subject-context-id.html">context-association-subject-context-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The context-id of a specific CONTEXT that serves as the subject of a specific CONTEXT-ASSOCIATION (a role name for context-id).</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CONTEXT-ASSOCIATION-STATUS-context-association-status-category-code.html">context-association-status-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that indicates whether a specific CONTEXT-ASSOCIATION-STATUS refers to the beginning or termination of
+                                          the association.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CONTEXT-ASSOCIATION-STATUS-context-association-status-effective-datetime.html">context-association-status-effective-datetime</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string representing a point in time that designates the beginning of the period of effectiveness for a specific
+                                          CONTEXT-ASSOCIATION-STATUS.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CONTEXT-ASSOCIATION-STATUS-context-association-status-establishing-organisation-id.html">context-association-status-establishing-organisation-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The identifier of the ORGANISATION that establishes a specific CONTEXT-ASSOCIATION-STATUS (a role name for object-item-id).</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

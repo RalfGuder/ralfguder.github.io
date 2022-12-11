@@ -1,0 +1,56 @@
+/*Author: Dariusz Nogalski, ABG STER-PROJEKT SA*/
+BODY {	background : #e0e0e0;	font-family : Tahoma;	font-weight:normal;	font-size : 10pt;}
+
+/*P default*/
+P{	font-family : Tahoma;	font-weight:normal;	font-size : 10pt;}
+/*P alert block*/
+P.a{font-family : Tahoma;	font-weight:bold;	font-size : 10pt; color:#FF0000}
+
+/*td default*/
+TD{	font-family : Tahoma;	font-weight:normal;	font-size : 10pt;}
+/*td reserved for outer table*/
+TD.a{	font-family : Tahoma;	font-weight:normal;	font-size : 10pt;	background-color:#296949;}
+/*td primary table header*/
+TD.b{font-family : Tahoma;font-weight:bold;	font-size : 10pt;	background-color :#428484;}
+/*td table header with larger font*/
+TD.bb{font-family : Tahoma;font-weight:normal;	font-size : 14pt;	background-color :#428484;}
+/*td regular table cell*/
+TD.c{	font-family : Tahoma;	font-weight:normal;	font-size : 10pt;	background-color : #e0e0e0;}
+/*td regular 12 font table cell*/
+TD.c12{	font-family : Tahoma;	font-weight:normal;	font-size : 12pt;	background-color : #e0e0e0;}
+/*td regular table cell with larger font*/
+TD.cc{	font-family : Tahoma;	font-weight:normal;	font-size : 14pt;	background-color : #e0e0e0;}
+/*td bold regular table cell*/
+TD.d{	font-family : Tahoma;	font-weight:bold;	font-size : 10pt;	background-color : #e0e0e0;}
+/*td for help notes*/
+TD.e{font-family : Arial;	font-weight:normal;	font-size : 8pt;	background-color : #e0e0e0;}
+/*td table cell for obligatory fields*/
+TD.f{	font-family : Tahoma;	font-weight:bold;	font-size : 10pt;	background-color : #e0e0e0;}
+/*td error table cell*/
+TD.g{font-family : Tahoma;	font-weight:bold;	font-size : 10pt;	background-color : #e0e0e0;	color : #FF0000;}
+/*td xxsmall font table cell*/
+TD.h{font-family : Arial;	font-size : 7pt;	background-color : #e0e0e0;}
+
+
+B {font-weight: bold}
+B.a {font-weight: bold; font-size : 10pt;}
+
+/*Font default*/
+FONT{font-family : Tahoma;font-size : 10pt;}
+/*Font for alert message*/
+FONT.a{	color:#FF0000}
+/*Font import ok*/
+FONT.b{font-family : Tahoma;font-size : 10pt;}
+/*Font import err*/
+FONT.c{font-weight:bold; color:#FF0000}
+/*rewind paged observations*/
+FONT.d{	font-family : Arial;font-weight: bold;font-size : 10pt;background-color : #e0e0e0;}
+
+PRE.a{font-family : Tahoma;	font-weight:normal;	font-size : 10pt;}
+
+/*Link default*/
+A.a{font-family : Tahoma;	font-weight:bold;	font-size : 10pt;}
+/*help list link*/
+A.b{font-family : Tahoma;font-weight: bolder;font-size : 12pt;background-color : #336633;color : #FFCC00;}
+/*rewind paged observations*/
+A.d{font-family : Arial;font-weight: bold;font-size : 10pt;background-color : #e0e0e0;}

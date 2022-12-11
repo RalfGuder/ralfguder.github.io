@@ -1,0 +1,147 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">OBJECT-ITEM-CAPABILITY</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">A perceived value of a specific CAPABILITY of an OBJECT-ITEM.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./CAPABILITY.html">CAPABILITY</a></td>
+                                       <td class="c">is-quantified-in / quantifies</td>
+                                       <td class="c">OBJECT-ITEM-CAPABILITY</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">capability-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./OBJECT-ITEM.html">OBJECT-ITEM</a></td>
+                                       <td class="c">is-specified-with / is-specified-for</td>
+                                       <td class="c">OBJECT-ITEM-CAPABILITY</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./REPORTING-DATA.html">REPORTING-DATA</a></td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c">OBJECT-ITEM-CAPABILITY</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-CAPABILITY-capability-id.html">capability-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific CAPABILITY and to distinguish it from all other CAPABILITYs.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-CAPABILITY-object-item-capability-index.html">object-item-capability-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM-CAPABILITY for a specific OBJECT-ITEM
+                                          and a specific CAPABILITY and to distinguish it from all other OBJECT-ITEM-CAPABILITYs for that OBJECT-ITEM and that CAPABILITY.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-CAPABILITY-object-item-id.html">object-item-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM and to distinguish it from all other
+                                          OBJECT-ITEMs.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-CAPABILITY-object-item-capability-mission-primacy-code.html">object-item-capability-mission-primacy-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the priority of the role that a specific capability, restricted to be an OPERATIONAL-CAPABILITY,
+                                          has for the specific OBJECT-ITEM.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-CAPABILITY-object-item-capability-quantity.html">object-item-capability-quantity</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that represents the aggregated units of a specific CAPABILITY that is estimated to be attainable for a specific
+                                          OBJECT-ITEM. The unit of measure is defined in the CAPABILITY specification.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-CAPABILITY-reporting-data-id.html">reporting-data-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific REPORTING-DATA and to distinguish it from all other
+                                          REPORTING-DATAs.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

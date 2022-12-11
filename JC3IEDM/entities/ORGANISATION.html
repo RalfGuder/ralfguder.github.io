@@ -1,0 +1,255 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">ORGANISATION</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">An OBJECT-ITEM that is an administrative or functional structure.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Supertype:</td>
+                     <td class="c"><a href="./OBJECT-ITEM.html">OBJECT-ITEM</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Subtypes:</td>
+                     <td class="c"><a href="./CONVOY.html">CONVOY</a>, <a href="./UNIT.html">UNIT</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">is-authority-for-the-use-of / is-used-as-specified-by</td>
+                                       <td class="c"><a href="./ACTION-OBJECTIVE.html">ACTION-OBJECTIVE</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">action-objective-authorising-organisation-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">is-authority-for-the-use-of / is-used-as-specified-by</td>
+                                       <td class="c"><a href="./ACTION-RESOURCE.html">ACTION-RESOURCE</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">action-resource-authorising-organisation-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">is-the-owner-of / </td>
+                                       <td class="c"><a href="./RULE-OF-ENGAGEMENT.html">RULE-OF-ENGAGEMENT</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">owning-organisation-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">is-the-reporting-agent-for / is-reported-by</td>
+                                       <td class="c"><a href="./REPORTING-DATA.html">REPORTING-DATA</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-reporting-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">has-its-role-specified-through / </td>
+                                       <td class="c"><a href="./ORGANISATION-ACTION-ASSOCIATION.html">ORGANISATION-ACTION-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">specifies / </td>
+                                       <td class="c"><a href="./ORGANISATION-ACTION-TASK-RULE-OF-ENGAGEMENT-STATUS.html">ORGANISATION-ACTION-TASK-RULE-OF-ENGAGEMENT-STATUS</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">organisation-action-task-rule-of-engagement-status-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">assigns-reporting-code-in / </td>
+                                       <td class="c"><a href="./ORGANISATION-MATERIEL-TYPE-ASSOCIATION.html">ORGANISATION-MATERIEL-TYPE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">is-configured-as-specified-in / specifies-the-configuration-of</td>
+                                       <td class="c"><a href="./ORGANISATION-STRUCTURE.html">ORGANISATION-STRUCTURE</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">organisation-structure-root-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">is-the-user-of / is-used-by</td>
+                                       <td class="c"><a href="./ACTION-OBJECTIVE-ITEM-MARKING.html">ACTION-OBJECTIVE-ITEM-MARKING</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">action-objective-item-marking-using-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">has-a-role-with-respect-to / </td>
+                                       <td class="c"><a href="./ORGANISATION-REFERENCE-ASSOCIATION.html">ORGANISATION-REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">establishes / is-established-by</td>
+                                       <td class="c"><a href="./ACTION-CONTEXT-STATUS.html">ACTION-CONTEXT-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">action-context-status-establishing-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">establishes / is-established-by</td>
+                                       <td class="c"><a href="./CONTEXT-ASSOCIATION-STATUS.html">CONTEXT-ASSOCIATION-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">context-association-status-establishing-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">establishes / is-established-by</td>
+                                       <td class="c"><a href="./CONTEXT-ELEMENT-STATUS.html">CONTEXT-ELEMENT-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">context-element-status-establishing-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">establishes / is-established-by</td>
+                                       <td class="c"><a href="./CONTEXT-OBJECT-ITEM-ASSOCIATION-STATUS.html">CONTEXT-OBJECT-ITEM-ASSOCIATION-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">context-object-item-association-status-establishing-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">has-a-role-with-respect-to / </td>
+                                       <td class="c"><a href="./OPERATIONAL-INFORMATION-GROUP-ORGANISATION-ASSOCIATION.html">OPERATIONAL-INFORMATION-GROUP-ORGANISATION-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">establishes / is-established-by</td>
+                                       <td class="c"><a href="./OPERATIONAL-INFORMATION-GROUP-ORGANISATION-ASSOCIATION-STATUS.html">OPERATIONAL-INFORMATION-GROUP-ORGANISATION-ASSOCIATION-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">operational-information-group-organisation-association-status-establishing-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">has-role-for / </td>
+                                       <td class="c"><a href="./ORGANISATION-PLAN-ORDER-ASSOCIATION.html">ORGANISATION-PLAN-ORDER-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">establishes / </td>
+                                       <td class="c"><a href="./ORGANISATION-PLAN-ORDER-ASSOCIATION-STATUS.html">ORGANISATION-PLAN-ORDER-ASSOCIATION-STATUS</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">establishing-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ORGANISATION</td>
+                                       <td class="c">is-recipient-of / </td>
+                                       <td class="c"><a href="./PLAN-ORDER-DISTRIBUTION.html">PLAN-ORDER-DISTRIBUTION</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">recipient-organisation-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ORGANISATION-organisation-id.html">organisation-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The object-item-id of a specific ORGANISATION (a role name for object-item-id).</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ORGANISATION-organisation-category-code.html">organisation-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the class of ORGANISATION. It serves as a discriminator that partitions ORGANISATION into
+                                          subtypes.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

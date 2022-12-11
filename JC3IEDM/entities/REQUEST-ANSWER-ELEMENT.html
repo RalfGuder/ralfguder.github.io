@@ -1,0 +1,119 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">REQUEST-ANSWER-ELEMENT</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">A relationship between a specific REQUEST-ANSWER and a specific REPORTING-DATA that provides linkage to amplifying information
+                        for a REQUEST-ANSWER.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./REQUEST-ANSWER.html">REQUEST-ANSWER</a></td>
+                                       <td class="c">is-comprised-of / </td>
+                                       <td class="c">REQUEST-ANSWER-ELEMENT</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">request-id<br>request-answer-index
+                                       </td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./REPORTING-DATA.html">REPORTING-DATA</a></td>
+                                       <td class="c">is-part-of / </td>
+                                       <td class="c">REQUEST-ANSWER-ELEMENT</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">comprising-reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REQUEST-ANSWER-ELEMENT-comprising-reporting-data-id.html">comprising-reporting-data-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The reporting-data-id that specifies what comprises the information returned to REQUEST-ANSWER-ELEMENT (a role name for reporting-data-id).</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REQUEST-ANSWER-ELEMENT-request-answer-index.html">request-answer-index (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific REQUEST-ANSWER for a specific REQUEST and to distinguish
+                                          it from all other REQUEST-ANSWERs for that REQUEST.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REQUEST-ANSWER-ELEMENT-request-id.html">request-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The action-task-id of a specific REQUEST (a role name for action-id).</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

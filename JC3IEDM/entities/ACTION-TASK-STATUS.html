@@ -1,0 +1,157 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">ACTION-TASK-STATUS</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">The perceived appraisal of the planning and execution progress of a particular ACTION-TASK as determined by the reporting
+                        organisation.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./ACTION-TASK.html">ACTION-TASK</a></td>
+                                       <td class="c">has / is-ascribed-to</td>
+                                       <td class="c">ACTION-TASK-STATUS</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-task-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./REPORTING-DATA.html">REPORTING-DATA</a></td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c">ACTION-TASK-STATUS</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-action-task-id.html">action-task-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The action-id of a specific ACTION-TASK (a role name for action-id).</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-action-task-status-index.html">action-task-status-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific ACTION-TASK-STATUS for a specific ACTION-TASK and
+                                          to distinguish it from all other ACTION-TASK-STATUSs for that ACTION-TASK.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-action-task-status-amend-timing-code.html">action-task-status-amend-timing-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that denotes request or requirement to modify the timing associated with a specific ACTION-TASK.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-action-task-status-approval-indicator-code.html">action-task-status-approval-indicator-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that denotes at the reporting time whether an ACTION-TASK is approved for execution.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-action-task-status-category-code.html">action-task-status-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the perceived class of a specific ACTION-TASK at a given time.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-action-task-status-completion-ratio.html">action-task-status-completion-ratio</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric quotient value that represents the portion of a whole ACTION-TASK that is estimated to have occurred or been accomplished.
+                                          The value must be in the range from 0 to 1.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-action-task-status-feint-indicator-code.html">action-task-status-feint-indicator-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that indicates whether the ACTION-TASK is a feint.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-action-task-status-planning-indicator-code.html">action-task-status-planning-indicator-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that denotes at the reporting time whether an ACTION-TASK is completed in the planning process.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-action-task-status-progress-code.html">action-task-status-progress-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the perceived appraisal of the progress of a specific ACTION-TASK.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-TASK-STATUS-reporting-data-id.html">reporting-data-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific REPORTING-DATA and to distinguish it from all other
+                                          REPORTING-DATAs.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

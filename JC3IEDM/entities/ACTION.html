@@ -1,0 +1,214 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">ACTION</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">An activity, or the occurrence of an activity, that may utilise resources and may be focused against an objective.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Subtypes:</td>
+                     <td class="c"><a href="./ACTION-EVENT.html">ACTION-EVENT</a>, <a href="./ACTION-TASK.html">ACTION-TASK</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-placed-within / </td>
+                                       <td class="c"><a href="./ACTION-CONTEXT.html">ACTION-CONTEXT</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-measured-by / records-observed-results-of</td>
+                                       <td class="c"><a href="./ACTION-EFFECT.html">ACTION-EFFECT</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-the-subject-of / </td>
+                                       <td class="c"><a href="./ACTION-FUNCTIONAL-ASSOCIATION.html">ACTION-FUNCTIONAL-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-functional-association-subject-action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-the-object-of / </td>
+                                       <td class="c"><a href="./ACTION-FUNCTIONAL-ASSOCIATION.html">ACTION-FUNCTIONAL-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-functional-association-object-action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-focussed-on / is-focus-of</td>
+                                       <td class="c"><a href="./ACTION-OBJECTIVE.html">ACTION-OBJECTIVE</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">requires-as-a-minimum / is-minimum-required-for</td>
+                                       <td class="c"><a href="./ACTION-REQUIRED-CAPABILITY.html">ACTION-REQUIRED-CAPABILITY</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">requires / is-required-for</td>
+                                       <td class="c"><a href="./ACTION-RESOURCE.html">ACTION-RESOURCE</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-the-subject-of / </td>
+                                       <td class="c"><a href="./ACTION-TEMPORAL-ASSOCIATION.html">ACTION-TEMPORAL-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-temporal-association-subject-action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-the-object-of / </td>
+                                       <td class="c"><a href="./ACTION-TEMPORAL-ASSOCIATION.html">ACTION-TEMPORAL-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-temporal-association-object-action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-acted-upon-as-specified-by / </td>
+                                       <td class="c"><a href="./ORGANISATION-ACTION-ASSOCIATION.html">ORGANISATION-ACTION-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-the-reason-for / is-based-on</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-GROUP-ACCOUNT.html">OBJECT-ITEM-GROUP-ACCOUNT</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">has-relevant-information-in / </td>
+                                       <td class="c"><a href="./ACTION-REFERENCE-ASSOCIATION.html">ACTION-REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">is-geometrically-defined-through / </td>
+                                       <td class="c"><a href="./ACTION-LOCATION.html">ACTION-LOCATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">ACTION</td>
+                                       <td class="c">has-comments-added-by / provides-comments-about</td>
+                                       <td class="c"><a href="./ACTION-COMMENT.html">ACTION-COMMENT</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">action-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-action-id.html">action-id (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific ACTION and to distinguish it from all other ACTIONs.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-action-category-code.html">action-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the class of ACTION. It serves as a discriminator that partitions ACTION into subtypes.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/ACTION-action-name-text.html">action-name-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent a specific ACTION.</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

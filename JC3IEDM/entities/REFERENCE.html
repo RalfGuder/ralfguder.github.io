@@ -1,0 +1,297 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">REFERENCE</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">Identification of a record of information.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">provides-information-related-to / is-amplified-by</td>
+                                       <td class="c"><a href="./REPORTING-DATA.html">REPORTING-DATA</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reference-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">applies-to / </td>
+                                       <td class="c"><a href="./ACTION-REFERENCE-ASSOCIATION.html">ACTION-REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">reference-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">applies-to / </td>
+                                       <td class="c"><a href="./CAPABILITY-REFERENCE-ASSOCIATION.html">CAPABILITY-REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">reference-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">applies-to / </td>
+                                       <td class="c"><a href="./OBJECT-ITEM-REFERENCE-ASSOCIATION.html">OBJECT-ITEM-REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">reference-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">applies-to / </td>
+                                       <td class="c"><a href="./OBJECT-TYPE-REFERENCE-ASSOCIATION.html">OBJECT-TYPE-REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">reference-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">is-administered-by / </td>
+                                       <td class="c"><a href="./ORGANISATION-REFERENCE-ASSOCIATION.html">ORGANISATION-REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">reference-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">is-the-subject-of / </td>
+                                       <td class="c"><a href="./REFERENCE-ASSOCIATION.html">REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">reference-association-subject-reference-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">is-the-object-of / </td>
+                                       <td class="c"><a href="./REFERENCE-ASSOCIATION.html">REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">reference-association-object-reference-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">is-cited-in / cites</td>
+                                       <td class="c"><a href="./PLAN-ORDER-COMPONENT-CONTENT-REFERENCE.html">PLAN-ORDER-COMPONENT-CONTENT-REFERENCE</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reference-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./SECURITY-CLASSIFICATION.html">SECURITY-CLASSIFICATION</a></td>
+                                       <td class="c">provides-to / </td>
+                                       <td class="c">REFERENCE</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">security-classification-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-id.html">reference-id (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific REFERENCE and to distinguish it from all other REFERENCEs.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-approval-datetime.html">reference-approval-datetime</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string representing a point in time that designates the date when the artefact that is cited in a specific REFERENCE
+                                          was approved.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-content-category-code.html">reference-content-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the classification of the general content of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-creation-datetime.html">reference-creation-datetime</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string representing a point in time that designates the creation date for the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-description-text.html">reference-description-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent a description of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-electronic-source-text.html">reference-electronic-source-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent the electronic source of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-file-size-quantity.html">reference-file-size-quantity</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that represents the size of an electronic version of the artefact cited in a specific REFERENCE. The unit
+                                          of measure is kilobyte.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-format-text.html">reference-format-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent the data format of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-language-code.html">reference-language-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that identifies the language used in the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-lifecycle-code.html">reference-lifecycle-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the lifecycle of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-medium-type-code.html">reference-medium-type-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the type of medium of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-originator-text.html">reference-originator-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent the identity of the originator of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-physical-size-text.html">reference-physical-size-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent the size of a physical version of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-primary-location-text.html">reference-primary-location-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent the identity of the primary physical or electronic location of the artefact cited
+                                          in a specific REFERENCE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-publication-datetime.html">reference-publication-datetime</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string representing a point in time that designates the date of publication for the artefact cited in a specific
+                                          REFERENCE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-releasability-text.html">reference-releasability-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent the releasability restrictions for the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-short-title-text.html">reference-short-title-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent an abbreviated title or name of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-title-text.html">reference-title-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent the name of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-transmittal-type-code.html">reference-transmittal-type-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the means by which the artefact cited in a specific REFERENCE is transmitted to the recipient.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-validity-period-begin-datetime.html">reference-validity-period-begin-datetime</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string representing a point in time that designates the beginning of the period of validity for the content
+                                          in the artefact cited in a specific REFERENCE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-validity-period-end-datetime.html">reference-validity-period-end-datetime</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string representing a point in time that designates the end of the period of validity for the content in the
+                                          artefact cited in a specific REFERENCE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-verification-code.html">reference-verification-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the verification of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-reference-version-text.html">reference-version-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent the identification of the version of the artefact cited in a specific REFERENCE.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/REFERENCE-security-classification-id.html">security-classification-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific SECURITY-CLASSIFICATION and to distinguish it from
+                                          all other SECURITY-CLASSIFICATIONs.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

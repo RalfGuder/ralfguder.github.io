@@ -1,0 +1,129 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">OBJECT-ITEM-REFERENCE-ASSOCIATION</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">A relationship between a specific OBJECT-ITEM and a specific REFERENCE.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./OBJECT-ITEM.html">OBJECT-ITEM</a></td>
+                                       <td class="c">has-relevant-information-in / </td>
+                                       <td class="c">OBJECT-ITEM-REFERENCE-ASSOCIATION</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./REFERENCE.html">REFERENCE</a></td>
+                                       <td class="c">applies-to / </td>
+                                       <td class="c">OBJECT-ITEM-REFERENCE-ASSOCIATION</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">reference-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-REFERENCE-ASSOCIATION-object-item-id.html">object-item-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM and to distinguish it from all other
+                                          OBJECT-ITEMs.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-REFERENCE-ASSOCIATION-object-item-reference-association-index.html">object-item-reference-association-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM-REFERENCE-ASSOCIATION for a specific
+                                          OBJECT-ITEM and a specific REFERENCE and to distinguish it from all other OBJECT-ITEM-REFERENCE-ASSOCIATIONs for that OBJECT-ITEM
+                                          and that REFERENCE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-REFERENCE-ASSOCIATION-reference-id.html">reference-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific REFERENCE and to distinguish it from all other REFERENCEs.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-REFERENCE-ASSOCIATION-object-item-reference-association-category-code.html">object-item-reference-association-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the class of a specific OBJECT-ITEM-REFERENCE-ASSOCIATION.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-REFERENCE-ASSOCIATION-object-item-reference-association-specific-part-text.html">object-item-reference-association-specific-part-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent a specific part of the artefact that applies in a specific OBJECT-ITEM-REFERENCE-ASSOCIATION.</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

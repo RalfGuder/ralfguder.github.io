@@ -1,0 +1,153 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">OBJECT-ITEM-GROUP-ACCOUNT-DETAIL</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">The total count and condition of a specific group included in a specific OBJECT-ITEM-GROUP-ACCOUNT. The group is defined as
+                        a specific PERSON-TYPE that may also be categorised by a specific GROUP-CHARACTERISTIC.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./PERSON-TYPE.html">PERSON-TYPE</a></td>
+                                       <td class="c">is-cited-in / is-the-count-of</td>
+                                       <td class="c">OBJECT-ITEM-GROUP-ACCOUNT-DETAIL</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">person-type-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./GROUP-CHARACTERISTIC.html">GROUP-CHARACTERISTIC</a></td>
+                                       <td class="c">provides-categorisation-for / is-classified-according-to</td>
+                                       <td class="c">OBJECT-ITEM-GROUP-ACCOUNT-DETAIL</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">group-characteristic-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./OBJECT-ITEM-GROUP-ACCOUNT.html">OBJECT-ITEM-GROUP-ACCOUNT</a></td>
+                                       <td class="c">is-enumerated-in / is-part-of</td>
+                                       <td class="c">OBJECT-ITEM-GROUP-ACCOUNT-DETAIL</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id<br>object-item-group-account-index
+                                       </td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-GROUP-ACCOUNT-DETAIL-object-item-group-account-detail-index.html">object-item-group-account-detail-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM-GROUP-ACCOUNT-DETAIL for a specific OBJECT-ITEM-GROUP-ACCOUNT
+                                          and to distinguish it from all other OBJECT-ITEM-GROUP-ACCOUNT-DETAILs for that OBJECT-ITEM-GROUP-ACCOUNT.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-GROUP-ACCOUNT-DETAIL-object-item-group-account-index.html">object-item-group-account-index (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM-GROUP-ACCOUNT for a specific OBJECT-ITEM
+                                          and to distinguish it from all other OBJECT-ITEM-GROUP-ACCOUNTs for that OBJECT-ITEM.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-GROUP-ACCOUNT-DETAIL-object-item-id.html">object-item-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM and to distinguish it from all other
+                                          OBJECT-ITEMs.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-GROUP-ACCOUNT-DETAIL-group-characteristic-id.html">group-characteristic-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific GROUP-CHARACTERISTIC and to distinguish it from all
+                                          other GROUP-CHARACTERISTICs.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-GROUP-ACCOUNT-DETAIL-object-item-group-account-detail-count.html">object-item-group-account-detail-count</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The integer value representing the aggregated units in a specific OBJECT-ITEM-GROUP-ACCOUNT-DETAIL.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-GROUP-ACCOUNT-DETAIL-object-item-group-account-detail-qualifier-code.html">object-item-group-account-detail-qualifier-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that describes the condition of the group counted in a specific OBJECT-ITEM-GROUP-ACCOUNT-DETAIL.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-GROUP-ACCOUNT-DETAIL-person-type-id.html">person-type-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The object-type-id of a specific PERSON-TYPE (a role name for object-type-id).</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

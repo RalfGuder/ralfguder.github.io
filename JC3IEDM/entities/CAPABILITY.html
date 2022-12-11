@@ -1,0 +1,141 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">CAPABILITY</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">The potential ability to do work, perform a function or mission, achieve an objective, or provide a service.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Subtypes:</td>
+                     <td class="c"><a href="./ENGINEERING-CAPABILITY.html">ENGINEERING-CAPABILITY</a>, <a href="./FIRE-CAPABILITY.html">FIRE-CAPABILITY</a>, <a href="./HANDLING-CAPABILITY.html">HANDLING-CAPABILITY</a>, <a href="./MAINTENANCE-CAPABILITY.html">MAINTENANCE-CAPABILITY</a>, <a href="./MOBILITY-CAPABILITY.html">MOBILITY-CAPABILITY</a>, <a href="./OPERATIONAL-CAPABILITY.html">OPERATIONAL-CAPABILITY</a>, <a href="./STORAGE-CAPABILITY.html">STORAGE-CAPABILITY</a>, <a href="./SUPPORT-CAPABILITY.html">SUPPORT-CAPABILITY</a>, <a href="./SURVEILLANCE-CAPABILITY.html">SURVEILLANCE-CAPABILITY</a>, <a href="./TRANSMISSION-CAPABILITY.html">TRANSMISSION-CAPABILITY</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">CAPABILITY</td>
+                                       <td class="c">is-quantified-in / quantifies</td>
+                                       <td class="c"><a href="./ACTION-REQUIRED-CAPABILITY.html">ACTION-REQUIRED-CAPABILITY</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">capability-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">CAPABILITY</td>
+                                       <td class="c">is-quantified-in / quantifies</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-CAPABILITY.html">OBJECT-ITEM-CAPABILITY</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">capability-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">CAPABILITY</td>
+                                       <td class="c">is-quantified-in / quantifies</td>
+                                       <td class="c"><a href="./OBJECT-TYPE-CAPABILITY-NORM.html">OBJECT-TYPE-CAPABILITY-NORM</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">capability-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">CAPABILITY</td>
+                                       <td class="c">has-relevant-information-in / </td>
+                                       <td class="c"><a href="./CAPABILITY-REFERENCE-ASSOCIATION.html">CAPABILITY-REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">capability-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CAPABILITY-capability-id.html">capability-id (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific CAPABILITY and to distinguish it from all other CAPABILITYs.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CAPABILITY-capability-category-code.html">capability-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the general class of a CAPABILITY. It serves as a discriminator that partitions CAPABILITY
+                                          into subtypes.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CAPABILITY-capability-day-night-code.html">capability-day-night-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that defines the light conditions that apply to a particular CAPABILITY.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/CAPABILITY-capability-unit-of-measure-code.html">capability-unit-of-measure-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the quantities in terms of which the magnitude of a specific CAPABILITY descriptor is stated.</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

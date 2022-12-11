@@ -1,0 +1,122 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">The count of bed occupancy according to specified source grouping for a specific MEDICAL-FACILITY-STATUS.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./MEDICAL-FACILITY-STATUS.html">MEDICAL-FACILITY-STATUS</a></td>
+                                       <td class="c">has / </td>
+                                       <td class="c">MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">medical-facility-status-id<br>object-item-status-index
+                                       </td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY-medical-facility-status-casualty-bed-occupancy-index.html">medical-facility-status-casualty-bed-occupancy-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY for
+                                          a specific FACILITY and a specific OBJECT-ITEM-STATUS and to distinguish it from all other instances of MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY
+                                          for that FACILITY and that OBJECT-ITEM-STATUS.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY-medical-facility-status-id.html">medical-facility-status-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The facility-id for a specific MEDICAL-FACILITY-STATUS (a role name for object-item-id).</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY-object-item-status-index.html">object-item-status-index (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM-STATUS for a specific OBJECT-ITEM and
+                                          to distinguish it from all other OBJECT-ITEM-STATUSs for that OBJECT-ITEM.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY-medical-facility-status-casualty-bed-occupancy-count.html">medical-facility-status-casualty-bed-occupancy-count</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The integer value representing the aggregated number of beds that are occupied by the specified group in a specific MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY-medical-facility-status-casualty-bed-occupancy-group-code.html">medical-facility-status-casualty-bed-occupancy-group-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the categorisation of casualties in a specific MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY.</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

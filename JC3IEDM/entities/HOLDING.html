@@ -1,0 +1,184 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">HOLDING</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">The quantity of each specific OBJECT-TYPE that is held by, installed in, or included with a specific OBJECT-ITEM.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">HOLDING</td>
+                                       <td class="c">is-changed-by / changes</td>
+                                       <td class="c"><a href="./HOLDING-TRANSFER.html">HOLDING-TRANSFER</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id<br>object-type-id<br>holding-index
+                                       </td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./OBJECT-ITEM.html">OBJECT-ITEM</a></td>
+                                       <td class="c">has / belongs-to</td>
+                                       <td class="c">HOLDING</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./OBJECT-TYPE.html">OBJECT-TYPE</a></td>
+                                       <td class="c">is-subject-of / is-constrained-to</td>
+                                       <td class="c">HOLDING</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-type-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./REPORTING-DATA.html">REPORTING-DATA</a></td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c">HOLDING</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-holding-index.html">holding-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific HOLDING for a specific OBJECT-ITEM and a specific
+                                          OBJECT-TYPE and to distinguish it from all other HOLDINGs for that OBJECT-ITEM and that OBJECT-TYPE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-object-item-id.html">object-item-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM and to distinguish it from all other
+                                          OBJECT-ITEMs.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-object-type-id.html">object-type-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-TYPE and to distinguish it from all other
+                                          OBJECT-TYPEs.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-holding-on-hand-quantity.html">holding-on-hand-quantity</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value representing the quantity of specific OBJECT-TYPEs physically held on-hand, not including reserves, by a
+                                          specific OBJECT-ITEM.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-holding-operational-count.html">holding-operational-count</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The integer value representing the number of specific OBJECT-TYPEs a specific OBJECT-ITEM has available for operations.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-holding-required-calculation-method-code.html">holding-required-calculation-method-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the required stocks calculation method used for the count of OBJECT-TYPEs in a specific
+                                          HOLDING.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-holding-required-on-hand-quantity.html">holding-required-on-hand-quantity</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value representing the quantity of specific OBJECT-TYPEs, not including reserves, required to be held on-hand
+                                          by a specific OBJECT-ITEM in accordance with Force Standards or established mission requirements.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-holding-required-total-quantity.html">holding-required-total-quantity</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value representing the total quantity of specific OBJECT-TYPEs required to be held on-hand and in reserve by a
+                                          specific OBJECT-ITEM to meet the NATO assigned task in accordance with Force Standards or established mission requirements.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-holding-total-quantity.html">holding-total-quantity</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value representing the total quantity, to include reserves, of specific OBJECT-TYPEs physically held by a specific
+                                          OBJECT-ITEM. The unit of measure is derived from the OBJECT-TYPE specification.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/HOLDING-reporting-data-id.html">reporting-data-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific REPORTING-DATA and to distinguish it from all other
+                                          REPORTING-DATAs.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

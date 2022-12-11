@@ -1,0 +1,150 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">PLAN-ORDER-COMPONENT-STRUCTURE</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">A relationship of a PLAN-ORDER-COMPONENT as a subject and a PLAN-ORDER-COMPONENT as an object to allow multilayer relationships
+                        among elements of the same or different instances of a PLAN-ORDER.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./PLAN-ORDER-COMPONENT.html">PLAN-ORDER-COMPONENT</a></td>
+                                       <td class="c">is-the-subject-of / </td>
+                                       <td class="c">PLAN-ORDER-COMPONENT-STRUCTURE</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">plan-order-component-structure-subject-plan-order-id<br>plan-order-component-structure-subject-plan-order-component-index
+                                       </td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./PLAN-ORDER-COMPONENT.html">PLAN-ORDER-COMPONENT</a></td>
+                                       <td class="c">is-the-object-of / </td>
+                                       <td class="c">PLAN-ORDER-COMPONENT-STRUCTURE</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">plan-order-component-structure-object-plan-order-id<br>plan-order-component-structure-object-plan-order-component-index
+                                       </td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/PLAN-ORDER-COMPONENT-STRUCTURE-plan-order-component-structure-index.html">plan-order-component-structure-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific PLAN-ORDER-COMPONENT-STRUCTURE for a specific PLAN-ORDER-COMPONENT
+                                          and to distinguish it from all other PLAN-ORDER-COMPONENT-STRUCTUREs for that PLAN-ORDER-COMPONENT.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/PLAN-ORDER-COMPONENT-STRUCTURE-plan-order-component-structure-object-plan-order-component-index.html">plan-order-component-structure-object-plan-order-component-index (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The plan-order-component-index of a specific PLAN-ORDER-COMPONENT that identifies the object of a specific PLAN-ORDER-COMPONENT-STRUCTURE
+                                          (a role name for plan-order-component-index).
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/PLAN-ORDER-COMPONENT-STRUCTURE-plan-order-component-structure-object-plan-order-id.html">plan-order-component-structure-object-plan-order-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The plan-order-id of a specific PLAN-ORDER-COMPONENT that identifies the object of a specific PLAN-ORDER-COMPONENT-STRUCTURE
+                                          (a role name for plan-order-id).
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/PLAN-ORDER-COMPONENT-STRUCTURE-plan-order-component-structure-subject-plan-order-component-index.html">plan-order-component-structure-subject-plan-order-component-index (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The plan-order-component-index of a specific PLAN-ORDER-COMPONENT that identifies the subject of a specific PLAN-ORDER-COMPONENT-STRUCTURE
+                                          (a role name for plan-order-component-index).
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/PLAN-ORDER-COMPONENT-STRUCTURE-plan-order-component-structure-subject-plan-order-id.html">plan-order-component-structure-subject-plan-order-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The plan-order-id of a specific PLAN-ORDER-COMPONENT that identifies the subject of a specific PLAN-ORDER-COMPONENT-STRUCTURE
+                                          (a role name for plan-order-id).
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/PLAN-ORDER-COMPONENT-STRUCTURE-plan-order-component-structure-category-code.html">plan-order-component-structure-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the type of relationship between a subject PLAN-ORDER-COMPONENT and an object PLAN-ORDER-COMPONENT
+                                          in a specific PLAN-ORDER-COMPONENT-STRUCTURE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/PLAN-ORDER-COMPONENT-STRUCTURE-plan-order-component-structure-datetime.html">plan-order-component-structure-datetime</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string representing the point in time when a PLAN-ORDER-COMPONENT-STRUCTURE is defined.</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

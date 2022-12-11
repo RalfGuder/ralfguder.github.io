@@ -1,0 +1,162 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">NETWORK</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">A FACILITY that provides bearer services for communication and information services and is composed of one or more links and
+                        nodes.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Supertype:</td>
+                     <td class="c"><a href="./FACILITY.html">FACILITY</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">NETWORK</td>
+                                       <td class="c">uses / is-specified-for</td>
+                                       <td class="c"><a href="./NETWORK-FREQUENCY.html">NETWORK-FREQUENCY</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">network-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">NETWORK</td>
+                                       <td class="c">provides / is-provided-by</td>
+                                       <td class="c"><a href="./NETWORK-SERVICE.html">NETWORK-SERVICE</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">network-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">NETWORK</td>
+                                       <td class="c">has / is-specified-for</td>
+                                       <td class="c"><a href="./NETWORK-CAPACITY.html">NETWORK-CAPACITY</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">network-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/NETWORK-network-id.html">network-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The facility-id of a specific NETWORK (a role name for object-item-id).</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/NETWORK-network-architecture-code.html">network-architecture-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the architecture of a specific NETWORK.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/NETWORK-network-category-code.html">network-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the class of NETWORK.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/NETWORK-network-channel-count.html">network-channel-count</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The integer value representing the number of channels that a specific NETWORK can provide.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/NETWORK-network-maximum-capacity-rate.html">network-maximum-capacity-rate</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that represents the maximum data rate that a specific NETWORK can process. The unit of measure is kilobits
+                                          per second (KBS). The specified value must be greater than or equal to 0 (zero).
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/NETWORK-network-means-code.html">network-means-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the physical linkage between the nodes of a specific NETWORK.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/NETWORK-network-minimum-capacity-rate.html">network-minimum-capacity-rate</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that represents the minimum data rate that a specific NETWORK is required to process. The unit of measure
+                                          is kilobits per second (KBS). The specified value must be greater than or equal to 0 (zero).
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/NETWORK-network-set-number-count.html">network-set-number-count</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The integer value representing the frequency hopping set number parameter for this specific NETWORK.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/NETWORK-network-subcategory-code.html">network-subcategory-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the specific class of NETWORK.</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

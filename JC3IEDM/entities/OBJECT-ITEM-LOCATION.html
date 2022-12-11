@@ -1,0 +1,226 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">OBJECT-ITEM-LOCATION</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">An association of an OBJECT-ITEM with a LOCATION that enables the geographic position of the OBJECT-ITEM to be specified.
+                        The operational meaning of geometry may also be specified.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./LOCATION.html">LOCATION</a></td>
+                                       <td class="c">provides-geometric-definition-for / </td>
+                                       <td class="c">OBJECT-ITEM-LOCATION</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">location-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./OBJECT-ITEM.html">OBJECT-ITEM</a></td>
+                                       <td class="c">is-geometrically-defined-through / </td>
+                                       <td class="c">OBJECT-ITEM-LOCATION</td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="./REPORTING-DATA.html">REPORTING-DATA</a></td>
+                                       <td class="c">provides-applicable-information-for / is-referenced-to</td>
+                                       <td class="c">OBJECT-ITEM-LOCATION</td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">reporting-data-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM-LOCATION</td>
+                                       <td class="c">provides-coordinate-frame-reference-for / </td>
+                                       <td class="c"><a href="./OBJECT-REFERENCE.html">OBJECT-REFERENCE</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">object-reference-object-item-id<br>object-reference-location-id<br>object-reference-object-item-location-index
+                                       </td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-location-id.html">location-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific LOCATION and to distinguish it from all other LOCATIONs.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-id.html">object-item-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM and to distinguish it from all other
+                                          OBJECT-ITEMs.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-index.html">object-item-location-index (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM-LOCATION for a specific OBJECT-ITEM and
+                                          a specific LOCATION and to distinguish it from all other OBJECT-ITEM-LOCATIONs for that OBJECT-ITEM and that LOCATION.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-bearing-accuracy-angle.html">object-item-location-bearing-accuracy-angle</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The rotational measurement of a sector that represents the uncertainty range in the estimate of the bearing at a specific
+                                          OBJECT-ITEM-LOCATION. The sector is bisected by the bearing.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-bearing-angle.html">object-item-location-bearing-angle</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The rotational measurement clockwise from the line of true North to the direction of motion in the horizontal plane of a specific
+                                          OBJECT-ITEM at a specific LOCATION.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-bearing-precision-code.html">object-item-location-bearing-precision-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the maximum resolution used for the expression of a bearing angle.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-horizontal-accuracy-dimension.html">object-item-location-horizontal-accuracy-dimension</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The one-dimensional linear distance representing the uncertainty in the horizontal plane in terms of probable circular error
+                                          for a specific OBJECT-ITEM-LOCATION.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-inclination-accuracy-angle.html">object-item-location-inclination-accuracy-angle</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The rotational measurement of a vertical sector that represents the uncertainty range in the estimate of the inclination at
+                                          a specific OBJECT-ITEM-LOCATION. The sector is bisected by the inclination.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-inclination-angle.html">object-item-location-inclination-angle</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The rotational measurement from the horizontal plane to the direction of motion of a specific OBJECT-ITEM at a specific LOCATION
+                                          (point or shape), where the positive angle is vertically upward.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-inclination-precision-code.html">object-item-location-inclination-precision-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the maximum resolution used for the expression of an inclination angle.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-meaning-code.html">object-item-location-meaning-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the meaning of the LOCATION geometry as it pertains to the OBJECT-ITEM.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-relative-speed-code.html">object-item-location-relative-speed-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the speed of the object relative to its normal speed.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-speed-accuracy-rate.html">object-item-location-speed-accuracy-rate</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that denotes the uncertainty range in the estimate for the speed at a specific OBJECT-ITEM-LOCATION where
+                                          the speed estimate falls at the centre of the accuracy range. The unit of measure is kilometres per hour. The specified value
+                                          must be greater than or equal to 0 (zero).
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-speed-precision-code.html">object-item-location-speed-precision-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the maximum resolution used for the expression of speed.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-speed-rate.html">object-item-location-speed-rate</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that denotes the motion of a specific OBJECT-ITEM at a specific LOCATION in terms of distance per unit time.
+                                          The unit of measure is kilometres per hour. The specified value must be greater than or equal to 0 (zero).
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-object-item-location-vertical-accuracy-dimension.html">object-item-location-vertical-accuracy-dimension</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The one-dimensional linear distance representing the uncertainty in terms of probable error range for the vertical axis of
+                                          a specific OBJECT-ITEM-LOCATION.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-LOCATION-reporting-data-id.html">reporting-data-id (FK)</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific REPORTING-DATA and to distinguish it from all other
+                                          REPORTING-DATAs.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,164 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">MINEFIELD-MARITIME</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">A MINEFIELD that is an area or volume of water containing mines.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Supertype:</td>
+                     <td class="c"><a href="./MINEFIELD.html">MINEFIELD</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">MINEFIELD-MARITIME</td>
+                                       <td class="c">has / </td>
+                                       <td class="c"><a href="./MINEFIELD-MARITIME-CASUALTY-ESTIMATE.html">MINEFIELD-MARITIME-CASUALTY-ESTIMATE</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">minefield-maritime-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">MINEFIELD-MARITIME</td>
+                                       <td class="c">has / </td>
+                                       <td class="c"><a href="./MINEFIELD-MARITIME-SUSTAINED-THREAT-MEASURE-OF-EFFECTIVENESS.html">MINEFIELD-MARITIME-SUSTAINED-THREAT-MEASURE-OF-EFFECTIVENESS</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">minefield-maritime-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-id.html">minefield-maritime-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The minefield-id of a specific MINEFIELD-MARITIME (a role name for object-item-id).</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-bottom-natural-camouflage-code.html">minefield-maritime-bottom-natural-camouflage-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the description of the ground of a lake, river, or ocean, or other body of water with respect
+                                          to the ability to hide mines on the bottom at a specific MINEFIELD-MARITIME.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-depth-placement-code.html">minefield-maritime-depth-placement-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that indicates the intended depth placement of maritime mines.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-detection-probability-ratio.html">minefield-maritime-detection-probability-ratio</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric quotient value that represents the probability that a mine will be located during MCM operations. The value must
+                                          be in the range from 0 to 1.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-expected-vessel-transit-count.html">minefield-maritime-expected-vessel-transit-count</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The integer value representing the expected number of transiting vessels.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-function-code.html">minefield-maritime-function-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the intended function of a specific MINEFIELD-MARITIME.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-life-duration.html">minefield-maritime-life-duration</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that represents a quantity of time in milliseconds for the estimated life of the MINEFIELD-MARITIME.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-mine-detailed-text.html">minefield-maritime-mine-detailed-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent a description of a specific mine.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-mines-laid-count.html">minefield-maritime-mines-laid-count</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The integer value representing the number of maritime mines laid in a specific MINEFIELD-MARITIME.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-mmoe-initial-threat-probability-ratio.html">minefield-maritime-mmoe-initial-threat-probability-ratio</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric quotient value that represents the planned or estimated likelihood that the first target ship to enter the minefield
+                                          will be a casualty. MMOE stands for Minefield Measurement Of Effectiveness. The value must be in the range from 0 to 1.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/MINEFIELD-MARITIME-minefield-maritime-subfunction-code.html">minefield-maritime-subfunction-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the intended purpose of the MINEFIELD-MARITIME.</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

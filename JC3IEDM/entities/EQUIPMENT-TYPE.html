@@ -1,0 +1,151 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">EQUIPMENT-TYPE</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">A MATERIEL-TYPE that is not intended for consumption.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Supertype:</td>
+                     <td class="c"><a href="./MATERIEL-TYPE.html">MATERIEL-TYPE</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Subtypes:</td>
+                     <td class="c"><a href="./AIRCRAFT-TYPE.html">AIRCRAFT-TYPE</a>, <a href="./CBRN-EQUIPMENT-TYPE.html">CBRN-EQUIPMENT-TYPE</a>, <a href="./ELECTRONIC-EQUIPMENT-TYPE.html">ELECTRONIC-EQUIPMENT-TYPE</a>, <a href="./ENGINEERING-EQUIPMENT-TYPE.html">ENGINEERING-EQUIPMENT-TYPE</a>, <a href="./MARITIME-EQUIPMENT-TYPE.html">MARITIME-EQUIPMENT-TYPE</a>, <a href="./MISCELLANEOUS-EQUIPMENT-TYPE.html">MISCELLANEOUS-EQUIPMENT-TYPE</a>, <a href="./RAILCAR-TYPE.html">RAILCAR-TYPE</a>, <a href="./VEHICLE-TYPE.html">VEHICLE-TYPE</a>, <a href="./VESSEL-TYPE.html">VESSEL-TYPE</a>, <a href="./WEAPON-TYPE.html">WEAPON-TYPE</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">EQUIPMENT-TYPE</td>
+                                       <td class="c">is-main-equipment-of / has-as-main-equipment</td>
+                                       <td class="c"><a href="./UNIT-TYPE.html">UNIT-TYPE</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">unit-type-principal-equipment-type-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/EQUIPMENT-TYPE-equipment-type-id.html">equipment-type-id (PK) (FK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The materiel-type-id of a specific EQUIPMENT-TYPE (a role name for object-type-id).</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/EQUIPMENT-TYPE-equipment-type-category-code.html">equipment-type-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the class of EQUIPMENT-TYPE. It serves as a discriminator that partitions EQUIPMENT-TYPE
+                                          into subtypes.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/EQUIPMENT-TYPE-equipment-type-fuel-capacity-quantity.html">equipment-type-fuel-capacity-quantity</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that represents the usable fuel capacity of an EQUIPMENT-TYPE. The unit of measure is litre.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/EQUIPMENT-TYPE-equipment-type-loaded-weight-quantity.html">equipment-type-loaded-weight-quantity</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that represents the weight of a specific EQUIPMENT-TYPE including the normal maximum payload, crew, and
+                                          personal/organisation equipment as well as the basic issue items. The unit of measure is kilogram.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/EQUIPMENT-TYPE-equipment-type-maximum-height-dimension.html">equipment-type-maximum-height-dimension</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The one-dimensional linear distance representing the maximum distance measured perpendicular to the base plane of the specific
+                                          EQUIPMENT-TYPE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/EQUIPMENT-TYPE-equipment-type-maximum-length-dimension.html">equipment-type-maximum-length-dimension</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The one-dimensional linear distance representing the maximum distance measured from end to end and parallel to the central
+                                          axis of a specific EQUIPMENT-TYPE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/EQUIPMENT-TYPE-equipment-type-maximum-width-dimension.html">equipment-type-maximum-width-dimension</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The one-dimensional linear distance representing the maximum distance measured from side to side and perpendicular to the
+                                          central axis of a specific EQUIPMENT-TYPE.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/EQUIPMENT-TYPE-equipment-type-unloaded-weight-quantity.html">equipment-type-unloaded-weight-quantity</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The numeric value that represents the weight of a specific EQUIPMENT-TYPE including on-equipment materiel that is an integral
+                                          part of the equipment when issued. The unit of measure is kilogram.
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

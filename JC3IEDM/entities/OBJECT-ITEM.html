@@ -1,0 +1,274 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+   </head>
+   <body>
+      <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="cc" align="right">JC3IEDM HTML Viewer<br>14 February 2012<br>Edition 3.1
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br><br><table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="a">
+               <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" colspan="2" align="center">Entity</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Name:</td>
+                     <td class="cc">OBJECT-ITEM</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Definition:</td>
+                     <td class="c">An individually identified object that has military or civilian significance.</td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Subtypes:</td>
+                     <td class="c"><a href="./FACILITY.html">FACILITY</a>, <a href="./FEATURE.html">FEATURE</a>, <a href="./MATERIEL.html">MATERIEL</a>, <a href="./ORGANISATION.html">ORGANISATION</a>, <a href="./PERSON.html">PERSON</a></td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Cardinality relationships:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="20%">Parent Entity</td>
+                                       <td class="b" align="center" width="15%">Verb Phrase</td>
+                                       <td class="b" align="center" width="20%">Child Entity </td>
+                                       <td class="b" align="center" width="10%">Relationship Type </td>
+                                       <td class="b" align="center" width="20%">Logical Foreign Keys</td>
+                                       <td class="b" align="center" width="15%">Cardinality</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-specified-as / is-specification-of</td>
+                                       <td class="c"><a href="./ACTION-OBJECTIVE-ITEM.html">ACTION-OBJECTIVE-ITEM</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-specified-as / is-specification-of</td>
+                                       <td class="c"><a href="./ACTION-RESOURCE-ITEM.html">ACTION-RESOURCE-ITEM</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">has / belongs-to</td>
+                                       <td class="c"><a href="./HOLDING.html">HOLDING</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-specified-with / is-specified-for</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-CAPABILITY.html">OBJECT-ITEM-CAPABILITY</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">has / is-ascribed-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-STATUS.html">OBJECT-ITEM-STATUS</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-classified-as / </td>
+                                       <td class="c"><a href="./OBJECT-ITEM-TYPE.html">OBJECT-ITEM-TYPE</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-One-or-More (P)</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-the-object-of / </td>
+                                       <td class="c"><a href="./CONTEXT-OBJECT-ITEM-ASSOCIATION.html">CONTEXT-OBJECT-ITEM-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-specified-as / is-a-designation-for</td>
+                                       <td class="c"><a href="./CANDIDATE-TARGET-DETAIL-ITEM.html">CANDIDATE-TARGET-DETAIL-ITEM</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-geometrically-defined-through / </td>
+                                       <td class="c"><a href="./OBJECT-ITEM-LOCATION.html">OBJECT-ITEM-LOCATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-specified-in / records-the-observed-results-for</td>
+                                       <td class="c"><a href="./ACTION-EFFECT-ITEM.html">ACTION-EFFECT-ITEM</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">has-for-address / is-the-address-for</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-ADDRESS.html">OBJECT-ITEM-ADDRESS</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-the-subject-of / </td>
+                                       <td class="c"><a href="./OBJECT-ITEM-ASSOCIATION.html">OBJECT-ITEM-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-association-subject-object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-the-object-of / </td>
+                                       <td class="c"><a href="./OBJECT-ITEM-ASSOCIATION.html">OBJECT-ITEM-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-association-object-object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">has-an-associated / is-associated-with</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-GROUP-ACCOUNT.html">OBJECT-ITEM-GROUP-ACCOUNT</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">has / </td>
+                                       <td class="c"><a href="./OBJECT-ITEM-AFFILIATION.html">OBJECT-ITEM-AFFILIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-assigned-establishment-through / </td>
+                                       <td class="c"><a href="./OBJECT-ITEM-OBJECT-TYPE-ESTABLISHMENT.html">OBJECT-ITEM-OBJECT-TYPE-ESTABLISHMENT</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">has-relevant-information-in / </td>
+                                       <td class="c"><a href="./OBJECT-ITEM-REFERENCE-ASSOCIATION.html">OBJECT-ITEM-REFERENCE-ASSOCIATION</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">has / </td>
+                                       <td class="c"><a href="./OBJECT-ITEM-ALIAS.html">OBJECT-ITEM-ALIAS</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">is-correspondent-in / is-transaction-for</td>
+                                       <td class="c"><a href="./HOLDING-TRANSFER.html">HOLDING-TRANSFER</a></td>
+                                       <td class="c">Non-identifying</td>
+                                       <td class="c">holding-transfer-corresponding-object-item-id</td>
+                                       <td class="c">Zero-or-One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">has / is-ascribed-to</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-HOSTILITY-STATUS.html">OBJECT-ITEM-HOSTILITY-STATUS</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c">OBJECT-ITEM</td>
+                                       <td class="c">has-comments-added-by / provides-comments-about</td>
+                                       <td class="c"><a href="./OBJECT-ITEM-COMMENT.html">OBJECT-ITEM-COMMENT</a></td>
+                                       <td class="c">Identifying</td>
+                                       <td class="c">object-item-id</td>
+                                       <td class="c">One-to-Zero-One-or-More</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="b" width="15%">Attributes:</td>
+                     <td class="c">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                           <tr>
+                              <td class="a">
+                                 <table border="0" align="center" cellspacing="1" cellpadding="1" width="100%">
+                                    <tr>
+                                       <td class="b" align="center" width="45%">Name</td>
+                                       <td class="b" align="center" width="5%">Opt</td>
+                                       <td class="b" align="center" width="50%">Definition </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-object-item-id.html">object-item-id (PK)</a></td>
+                                       <td class="c">MA</td>
+                                       <td class="c">The unique value, or set of characters, assigned to represent a specific OBJECT-ITEM and to distinguish it from all other
+                                          OBJECT-ITEMs.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-object-item-category-code.html">object-item-category-code</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The specific value that represents the class of OBJECT-ITEM. It serves as a discriminator that partitions OBJECT-ITEM into
+                                          subtypes.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="c"><a href="../attributes/OBJECT-ITEM-object-item-name-text.html">object-item-name-text</a></td>
+                                       <td class="c">OP</td>
+                                       <td class="c">The character string assigned to represent a specific OBJECT-ITEM.</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="d" colspan="2">Back to: <a href="../index.html">home</a>, <a href="../entities.html">entity list</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
