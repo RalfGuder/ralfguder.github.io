@@ -12,3 +12,12 @@
 ### Refactoring: »Methode spezialisieren«
 ### Regel: »Benutze niemal ›switch‹«
 ### Regel: »Erbe nur von Interfaces«
+### Refactoring: »Versuchsweise löschen und kompilieren«
+## Ähnlichen Code zusammenführen
+### Refactoring: »Ähnliche Klassen zusammenführen«
+### Refactoring: »›if‹s zusammenführen«
+### Regel: »Benutze reine Bedingungen« 
+### Refactoring: »Strategie einführen«
+### Regel: »Keine Interfaces mit nur einer Implementierung«
+### Refactoring: »Interface aus Implementierung extrahieren«
+## Die Daten verteidigen
