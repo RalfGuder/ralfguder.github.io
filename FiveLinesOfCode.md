@@ -23,3 +23,6 @@
 ## Die Daten verteidigen
 ### Regel: »Benutze keine Getter und Setter«
 ### Refactoring: »Getter und Setter löschen«
+### Regel: »Vermeide gemeinsame Affixe«
+### Refactoring: »Daten kapseln«
+### Refactoring: »Reihenfolge erzwingen«
