@@ -19,9 +19,14 @@ Eine Methode sollte nicht mehr als fünf Zeilen enthalten, ausgenommen Zeilen, d
 9. Übergib beim Aufruf Argumente, um die Fehler zu beheben.
 10. Entferne jetzt überflüssige Leerzeilen und Kommentare.
 
-
 ### Regel: »Aufrufen oder Übergeben«
+***Feststellung***  
+
+Eine Funktion sollte entweder Methoden an einem Objekt aufrufen oder das Objekt als Argument übergeben, aber nicht beides.
 ### Regel: »›if‹ nur am Anfang«
+***Feststellung***
+
+Wenn es eine ```if```-Anweisung gibt, dann sollte sie ganz am Anfang der Funktion stehen.
 ## Typen richtig nutzen
 ### Regel: »Benutze niemals ›if‹ mit ›else‹«
 ### Refactoring: »Typcodes durch Klassen ersetzen«
