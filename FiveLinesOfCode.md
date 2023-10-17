@@ -26,9 +26,12 @@ Eine Funktion sollte entweder Methoden an einem Objekt aufrufen oder das Objekt 
 ### Regel: »›if‹ nur am Anfang«
 ***Feststellung***
 
-Wenn es eine ```if```-Anweisung gibt, dann sollte sie ganz am Anfang der Funktion stehen.
+Wenn es eine `if`-Anweisung gibt, dann sollte sie ganz am Anfang der Funktion stehen.
 ## Typen richtig nutzen
 ### Regel: »Benutze niemals ›if‹ mit ›else‹«
+***Feststellung***
+
+Benutze niemals `if` mit `else`, außer wenn du mit Typen arbeitest, die du nicht selbst kontrollierst.
 ### Refactoring: »Typcodes durch Klassen ersetzen«
 ### Refactoring: »Code in Klassen schieben«
 ### Refactoring: »Methode integrieren«
