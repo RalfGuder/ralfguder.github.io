@@ -62,7 +62,7 @@ Es sollte keine Interfaces mit nur einer Implementierung geben.
 ### Regel: »Benutze keine Getter und Setter«
 ***Feststellung***
 
-Benutze keine Getter und Setter, außer für boolesche Felder.
+Benutze keine Getter und Setter, außer für boolesche Felder.  
 ***Geruch***
 
 Diese Regel leitet isch vom sogenannten *Gesetz der Demeter* ab, das gerne mit »Sprich nicht mit Fremden« paraphrasiert wird. Der Fremde in diesem Kontext ist ein Objekt, auf das wir keinen direkten Zugriff haben, aber auf das wir eine Referenz bekommen können. In objektorientierten Sprachen erhalten wir diese Referenz meist durch den Aufruf eines Getters - und deswegen gibt es diese Regel.
