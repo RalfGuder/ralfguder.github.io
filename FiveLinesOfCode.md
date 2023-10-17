@@ -21,3 +21,5 @@
 ### Regel: »Keine Interfaces mit nur einer Implementierung«
 ### Refactoring: »Interface aus Implementierung extrahieren«
 ## Die Daten verteidigen
+### Regel: »Benutze keine Getter und Setter«
+### Refactoring: »Getter und Setter löschen«
