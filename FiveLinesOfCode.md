@@ -37,17 +37,36 @@ Benutze niemals `if` mit `else`, außer wenn du mit Typen arbeitest, die du nich
 ### Refactoring: »Methode integrieren«
 ### Refactoring: »Methode spezialisieren«
 ### Regel: »Benutze niemal ›switch‹«
+***Feststellung***
+
+Benutze niemals `switch`, es sei denn, es gibt keinen `default`-Fall und *jeder* `case` hat eine `return`.
 ### Regel: »Erbe nur von Interfaces«
+***Feststellung***
+
+Erbe nur von Interfaces.
 ### Refactoring: »Versuchsweise löschen und kompilieren«
 ## Ähnlichen Code zusammenführen
 ### Refactoring: »Ähnliche Klassen zusammenführen«
 ### Refactoring: »›if‹s zusammenführen«
 ### Regel: »Benutze reine Bedingungen« 
+***Feststellung**
+
+Bedingungen sollten immer rein sein.
 ### Refactoring: »Strategie einführen«
 ### Regel: »Keine Interfaces mit nur einer Implementierung«
+***Feststellung***
+
+Es sollte keine Interfaces mit nur einer Implementierung geben.
 ### Refactoring: »Interface aus Implementierung extrahieren«
 ## Die Daten verteidigen
 ### Regel: »Benutze keine Getter und Setter«
+***Feststellung***
+
+Benutze keine Getter und Setter, außer für boolesche Felder.
+***Geruch***
+
+Diese Regel leitet isch vom sogenannten *Gesetz der Demeter* ab, das gerne mit »Sprich nicht mit Fremden« paraphrasiert wird. Der Fremde in diesem Kontext ist ein Objekt, auf das wir keinen direkten Zugriff haben, aber auf das wir eine Referenz bekommen können. In objektorientierten Sprachen erhalten wir diese Referenz meist durch den Aufruf eines Getters - und deswegen gibt es diese Regel.
+
 ### Refactoring: »Getter und Setter löschen«
 ### Regel: »Vermeide gemeinsame Affixe«
 ### Refactoring: »Daten kapseln«
