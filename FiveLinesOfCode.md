@@ -65,7 +65,7 @@ Dieses Refactoring macht aus einem Enum ein Interface und aus den Werten des Enu
 ### Refactoring: »Code in Klassen schieben«
 ***Beschreibung***
 
-Dieses Refactoring ist eine offensichtliche Fortsetzung von »Typcodes durch Klassen ersetzen«, weil es Funktionalität in die entstandenen Klassen verschiebt. Im Ergebnis werden häufig `if`-Anweisung gelöscht und die Programmlogik rückt näher an die Daten.
+Dieses Refactoring ist eine offensichtliche Fortsetzung von [»Typcodes durch Klassen ersetzen«](#refactoring-typcodes-durch-klassen-ersetzen), weil es Funktionalität in die entstandenen Klassen verschiebt. Im Ergebnis werden häufig `if`-Anweisung gelöscht und die Programmlogik rückt näher an die Daten.
 
 ### Refactoring: »Methode integrieren«
 ### Refactoring: »Methode spezialisieren«
