@@ -7,7 +7,7 @@ Eine Methode sollte nicht mehr als fünf Zeilen enthalten, ausgenommen Zeilen, d
 
 ***Geruch***
 
-Eine lange Methode riecht schon von selbst schlecht, weil man nur schwer mit ir arbeiten kann. Man muss die Logik der gesamten Methode auf einmal im Kopf haben. 
+Eine lange Methode riecht schon von selbst schlecht, weil man nur schwer mit ihr arbeiten kann. Man muss die Logik der gesamten Methode auf einmal im Kopf haben. 
 
 ### Refactoring: »Methode extrahieren«
 ***Vorgehen***
