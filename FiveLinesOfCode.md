@@ -3,7 +3,7 @@
 ### Regel: »Fünf Zeilen«
 ***Feststellung***   
 
-Eine Methode sollte nicht mehr als fünf Zeilen enthalten, ausgenommen Zeilen, die nur eine geschweifte Klammer, also { oder }, enthalten.
+Eine Methode sollte nicht mehr als fünf Zeilen enthalten, ausgenommen Zeilen, die nur eine geschweifte Klammer, also `{` oder `}`, enthalten.
 ### Refactoring: »Methode extrahieren«
 ***Vorgehen***
 1. Markiere die Zeilen, die du extrahieren willst, indem du sie mit Leerzeilen abgrenzt und ggf. durch einen Kommentar, der erklärt, was dieser Bereich tut.
