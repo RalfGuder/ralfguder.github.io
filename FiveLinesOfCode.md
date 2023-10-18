@@ -4,6 +4,11 @@
 ***Feststellung***   
 
 Eine Methode sollte nicht mehr als fünf Zeilen enthalten, ausgenommen Zeilen, die nur eine geschweifte Klammer, also `{` oder `}`, enthalten.
+
+***Geruch***
+
+Eine lange Methode riecht schon von selbst schlecht, weil man nur schwer mit ir arbeiten kann. Man muss die Logik der gesamten Methode auf einmal im Kopf haben. 
+
 ### Refactoring: »Methode extrahieren«
 ***Vorgehen***
 1. Markiere die Zeilen, die du extrahieren willst, indem du sie mit Leerzeilen abgrenzt und ggf. durch einen Kommentar, der erklärt, was dieser Bereich tut.
