@@ -42,6 +42,11 @@ Die Aussage »Der Inhalt einer Funktion sollte auf derselben Abstraktionsebene b
 ***Feststellung***
 
 Wenn es eine `if`-Anweisung gibt, dann sollte sie ganz am Anfang der Funktion stehen.
+
+***Geruch***
+
+Diese Regel - wie auch »Fünf Zeilen« - soll den Geruch verhindern, dass eine Funktion mehrere Verantwortlichkeiten hat. 
+
 ## Typen richtig nutzen
 ### Regel: »Benutze niemals ›if‹ mit ›else‹«
 ***Feststellung***
