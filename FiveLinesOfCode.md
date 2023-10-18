@@ -52,6 +52,11 @@ Diese Regel - wie auch »Fünf Zeilen« - soll den Geruch verhindern, dass eine 
 ***Feststellung***
 
 Benutze niemals `if` mit `else`, außer wenn du mit Typen arbeitest, die du nicht selbst kontrollierst.
+
+***Geruch***
+
+Diese Regel hängt mit dem Geruch *frühe Bindung* zusammen. Wenn unser Programm kompiliert wird, dann werden Verhalten wie `if-else`-Entscheidungen aufgelöst und festgeschrieben. Wir können sie nicht mehr ändern, ohne das Programm neu zu kompilieren. Das Gegenteil ist *späte Bindung*, wo das Verhalten erst im letztmöglichen Moment bestimmt wird, nämlich wenn der Code ausgeführt wird.
+
 ### Refactoring: »Typcodes durch Klassen ersetzen«
 ### Refactoring: »Code in Klassen schieben«
 ### Refactoring: »Methode integrieren«
