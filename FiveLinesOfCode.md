@@ -63,6 +63,10 @@ Diese Regel hängt mit dem Geruch *frühe Bindung* zusammen. Wenn unser Programm
 Dieses Refactoring macht aus einem Enum ein Interface und aus den Werten des Enums Klassen. Dadurch können wir den einzelnen Werten Eigenschaften zuweisen und Funktionalität eines Wertes auch in diesem Wert verorten.
 
 ### Refactoring: »Code in Klassen schieben«
+***Beschreibung***
+
+Dieses Refactoring ist eine offensichtliche Fortsetzung von »Typcodes durch Klassen ersetzen«, weil es Funktionalität in die entstandenen Klassen verschiebt. Im Ergebnis werden häufig `if`-Anweisung gelöscht und die Programmlogik rückt näher an die Daten.
+
 ### Refactoring: »Methode integrieren«
 ### Refactoring: »Methode spezialisieren«
 ### Regel: »Benutze niemal ›switch‹«
