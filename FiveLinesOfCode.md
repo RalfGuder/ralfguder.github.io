@@ -58,6 +58,10 @@ Benutze niemals `if` mit `else`, außer wenn du mit Typen arbeitest, die du nich
 Diese Regel hängt mit dem Geruch *frühe Bindung* zusammen. Wenn unser Programm kompiliert wird, dann werden Verhalten wie `if-else`-Entscheidungen aufgelöst und festgeschrieben. Wir können sie nicht mehr ändern, ohne das Programm neu zu kompilieren. Das Gegenteil ist *späte Bindung*, wo das Verhalten erst im letztmöglichen Moment bestimmt wird, nämlich wenn der Code ausgeführt wird.
 
 ### Refactoring: »Typcodes durch Klassen ersetzen«
+***Beschreibung***
+
+Dieses Refactoring macht aus einem Enum ein Interface und aus den Werten des Enums Klassen. Dadurch können wir den einzelnen Werten Eigenschaften zuweisen und Funktionalität eines Wertes auch in diesem Wert verorten.
+
 ### Refactoring: »Code in Klassen schieben«
 ### Refactoring: »Methode integrieren«
 ### Refactoring: »Methode spezialisieren«
