@@ -32,6 +32,12 @@ Eine lange Methode riecht schon von selbst schlecht, weil man nur schwer mit ihr
 ***Feststellung***  
 
 Eine Funktion sollte entweder Methoden an einem Objekt aufrufen oder das Objekt als Argument übergeben, aber nicht beides.
+
+***Geruch***
+
+Die Aussage »Der Inhalt einer Funktion sollte auf derselben Abstraktionsebene bleiben« ist so wichtig, dass es ein eigner Code Smell ist. Wie die meisten Gerüche ist auch dieser schwer zu quantifizieren und noch schwieriger zu bekämpfen. Es ist aber sehr einfach zu erkennen, wenn etwas als Argument übergeben wird, und ebenso einfach ist es, wenn etwas vor einem Punkt steht.
+
+
 ### Regel: »›if‹ nur am Anfang«
 ***Feststellung***
 
