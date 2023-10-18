@@ -10,6 +10,10 @@ Eine Methode sollte nicht mehr als fünf Zeilen enthalten, ausgenommen Zeilen, d
 Eine lange Methode riecht schon von selbst schlecht, weil man nur schwer mit ihr arbeiten kann. Man muss die Logik der gesamten Methode auf einmal im Kopf haben. 
 
 ### Refactoring: »Methode extrahieren«
+***Beschreibung***
+
+»Methode extrahieren« nimmt einen Teil einer Methode und macht daraus eine neue Methode. Das ist ein rein mechanischer Vorgang, und moderne IDEs können dieses Refactoring automatisch durchführen. Allein daruch ist es vermutlich sicher; Computer machen bei solchen Dingen selten Fehler. Man kann das Refactoring aber auch sicher von Hand ausführen.
+
 ***Vorgehen***
 1. Markiere die Zeilen, die du extrahieren willst, indem du sie mit Leerzeilen abgrenzt und ggf. durch einen Kommentar, der erklärt, was dieser Bereich tut.
 2. Erzeuge eine neue, leere Methode mit dem gewünschten Namen.
