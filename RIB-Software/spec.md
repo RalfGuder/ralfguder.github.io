@@ -86,9 +86,8 @@ public interface IModule
 - Reihenfolge:
   1. `Converter.RIBConnector`
   2. `config.xml`
-  3. `--var`
 - Nur Middleware darf Werte ändern
-- Plugins können keine Variablen direkt manipulieren
+- Plugins können Variablen direkt manipulieren
 
 ---
 
