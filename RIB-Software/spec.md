@@ -11,7 +11,7 @@
 
 ### 1. Einzelkommando
 ```bash
-converter.exe Export --input-file in.xml --output-file out.xml --status-file status.xml
+converter.exe <CmdName> [options]
 ```
 
 ### 2. Batch-Betrieb über Konfiguration
@@ -23,19 +23,19 @@ converter.exe --config config.xml
 
 | Parameter | Beschreibung |
 |----------|--------------|
-| `--config <file>` | XML-Datei mit Kommandoabfolge |
+| `--config <file>` | Pfad zur Konfigurationsdatei. (Standard 'Converter.xml') |
 | `<CmdName>` | Einzelkommando |
-| `--input-file`, `--output-file`, `--status-file` | Dateien für Einzelkommandos |
+| `--input-file <file>` | Pfad zu einer Eingabedatei. |
+| `--output-file <file>` | Pfad zu einer Ausgabedatei. |
+| `--status-file <file>` | Dateien für Einzelkommandos |
 | `--start-file <file>` | Übergabe-Dateiname an Zielsoftware (wird nicht validiert) |
-| `--fail-on-missing-plugin true|false` | Abbruch bei fehlendem Plugin (Default: true) |
+| `--fail-on-missing-plugin` | Abbruch bei fehlendem Plugin (Default: `true`) |
 | `--dry-run` | Testlauf ohne echte Ausführung |
-| `--var KEY=VALUE` | Setzt/überschreibt Laufzeitvariablen |
 | `--disable-variable-overwrite` | Verhindert Laufzeitänderungen von Variablen |
-| `--log-file-level DEBUG|INFO|WARN|ERROR` | Loglevel Datei |
-| `--log-console-level DEBUG|INFO|WARN|ERROR` | Loglevel Konsole |
-| `--version <value>` | Version der Zielsoftware (Fallback zu ARR_REGVER) |
+| `--product <string>` | Version der Zielsoftware (Default: V24). (Fallback zu ARR_REGVER) |
 | `--list-commands` | Zeigt verfügbare Plugins an |
 | `--help` / `<Cmd> --help` | Hilfeanzeige global oder kommandospezifisch |
+| `-- version` | Versionsinformationen anzeigen. |
 
 ---
 
