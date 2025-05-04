@@ -56,4 +56,5 @@ Ein klassisches Point-and-Click-Adventure basierend auf den Abenteuern der Diged
 
 ## 12. Veröffentlichung
 - **Proof of Concept:** Heft 143 – „Der Gefangene im Wüstenschloss“.
+- **First Release:** Heft 90 - „Das Turnier zu Venedig“ bis Heft 92 - „Karneval am Canale Grande“
 - **Spätere Episoden:** Kapitelweise modular veröffentlicht.
